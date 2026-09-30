@@ -1,0 +1,234 @@
+<!-- ============================================================
+     AAC STEEZY — 404
+     Same brand system as index: ink field, signature pink,
+     Archivo display + Space Mono metadata. One job: send the
+     visitor back to the sale.
+     ============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Page Not Found — AAC Steezy</title>
+  <meta name="description" content="This page couldn't be found. Head back to the AAC Steezy landing page — 40% off sitewide through Sunday at 11:59 PM.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#262626">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f5a0bd'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-size='22' font-weight='900' letter-spacing='-1' fill='%23262626' text-anchor='middle'%3EAAC%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink:      #262626;
+      --ink-2:    #333333;
+      --pink:     #f5a0bd;
+      --pink-deep:#e087ab;
+      --rose-text:#a8446b;
+      --paper:    #f4f2ee;
+      --white:    #ffffff;
+      --ease:     cubic-bezier(0.22, 1, 0.36, 1);
+
+      --font-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+      --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
+      --font-mono: 'Space Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--white);
+      background: var(--ink);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+    }
+
+    :focus-visible { outline: 3px solid var(--pink-deep); outline-offset: 3px; border-radius: 4px; }
+    ::selection { background: var(--pink); color: var(--ink); }
+
+    .skip-link {
+      position: absolute;
+      top: -64px;
+      left: 16px;
+      z-index: 200;
+      background: var(--pink);
+      color: var(--ink);
+      font-weight: 600;
+      padding: 14px 22px;
+      border-radius: 0 0 10px 10px;
+      text-decoration: none;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus { top: 0; }
+
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px clamp(20px, 4vw, 56px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+
+    .brand-mark {
+      display: inline-grid;
+      place-items: center;
+      background: var(--pink);
+      color: var(--ink);
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-stretch: 110%;
+      font-size: 0.95rem;
+      padding: 9px 12px;
+      border-radius: 8px;
+    }
+
+    .brand-name {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-stretch: 112%;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .mono-tag {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--pink);
+      letter-spacing: 0.04em;
+      text-transform: lowercase;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      padding: clamp(48px, 8vw, 96px) 24px;
+      position: relative;
+    }
+
+    main::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+      width: min(560px, 84vw);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 160, 189, 0.2), rgba(245, 160, 189, 0.05) 55%, transparent 72%);
+      filter: blur(4px);
+      pointer-events: none;
+    }
+
+    .code {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-stretch: 122%;
+      font-size: clamp(6rem, 22vw, 13rem);
+      line-height: 0.9;
+      color: transparent;
+      -webkit-text-stroke: 2px var(--pink);
+      position: relative;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-stretch: 118%;
+      text-transform: uppercase;
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      line-height: 1.05;
+      margin-top: 26px;
+      position: relative;
+    }
+
+    .msg {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #c9c7c4;
+      margin-top: 16px;
+      position: relative;
+    }
+
+    .actions { margin-top: 38px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; position: relative; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      line-height: 1;
+      padding: 18px 32px;
+      border-radius: 999px;
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.25s var(--ease), background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn-pink { background: var(--pink); color: var(--ink); }
+    .btn-pink:hover { background: var(--pink-deep); color: var(--white); transform: translateY(-2px); box-shadow: 0 12px 28px rgba(224, 135, 171, 0.4); }
+    .btn-ghost { background: transparent; color: var(--white); border-color: rgba(255, 255, 255, 0.45); }
+    .btn-ghost:hover { border-color: var(--white); background: rgba(255, 255, 255, 0.08); transform: translateY(-2px); }
+
+    .site-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 24px clamp(20px, 4vw, 56px);
+      font-size: 0.8rem;
+      color: #a3a19d;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AAC Steezy — home">
+      <span class="brand-mark">AAC</span>
+      <span class="brand-name">Steezy</span>
+    </a>
+    <span class="mono-tag">error · page not found</span>
+  </div>
+
+  <main id="main">
+    <p class="code" aria-hidden="true">404</p>
+    <h1>Page not found</h1>
+    <p class="msg">this shot doesn't exist — but the sale still does.</p>
+
+    <div class="actions">
+      <a class="btn btn-pink" href="index.html">Back to the Sale</a>
+      <a class="btn btn-ghost" href="https://gcu.edu" target="_blank" rel="noopener">Shop 40% Off</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="copy-year">2026</span> Active Apparel Co. — AAC Steezy</p>
+    <p>40% off sitewide through Sunday, October 4 · 11:59 PM local time.</p>
+  </footer>
+
+  <script>
+    const yearEl = document.getElementById("copy-year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
