@@ -11,6 +11,7 @@
 | File | Purpose |
 |------|---------|
 | `index.html` | Landing page — all HTML, CSS, and JS inline, commented by section |
+| `products.html` | Product list page — "The Drops": 4 fictional basketball shoes, same design system, one Shop Now per shoe |
 | `404.html` | Custom 404 page, same design system |
 
 Both run by double-clicking. Deploy by uploading the folder to any static host (Netlify Drop, GitHub Pages, Vercel).
@@ -73,18 +74,33 @@ Rules: 2 brand colors (ink + pink) plus neutrals. Pink is reserved for activatio
 
 1. Skip link (a11y)
 2. Announcement bar (ink, pink highlights, mono date)
-3. Sticky header — brand placard, 3 nav links, pink pill CTA → `https://gcu.edu`
+3. Sticky header — brand placard, 4 nav links, pink pill CTA → `products.html`
 4. Mobile overlay menu (full-screen ink, numbered mega links, Escape/backdrop close, focus moves to Close)
-5. Hero — full-bleed court photo (Unsplash `photo-1519766304817`), pink kicker pill, 2-line kinetic H1, supporting sub, two CTAs
+5. Hero — full-bleed court photo (Unsplash `photo-1519766304817`), pink kicker pill, 2-line kinetic H1, supporting sub, two CTAs (Shop Now → `products.html` · See Why AAC → `#benefits`)
 6. Pink marquee band (aria-hidden, duplicated spans for seamless loop)
 7. Benefits — 4 plaster cards with watermark numerals (01–04), hover fills white
 8. Manifesto — ink section, 3-line scroll-fill headline + mono footline
 9. Single review card ("Receipts, not hype.") — deliberately one strong verification
-10. Final CTA — ink field, pink radial "sun", date pill, gcu.edu button
+10. Final CTA — ink field, pink radial "sun", date pill, Shop Now button → `products.html`
 11. Footer — giant wordmark, section links, dynamic `#copy-year`
-12. Dock — fixed sale pill with live countdown, `https://gcu.edu` button
+12. Dock — fixed sale pill with live countdown, Shop Now button → `products.html`
 
-**CTAs point to `https://gcu.edu`** (assignment requirement — the client's designated destination). All five: header, hero, mobile menu, final, dock.
+**CTA routing (updated per client — external gcu.edu destination removed):** all purchase buttons are labeled **"Shop Now"** and route internally. Landing (header, hero, mobile menu, final, dock) → `products.html`. On `products.html`: header, mobile menu, and dock Shop Now → `#drops` (the grid); per-card and under-grid Shop Now → `#final` (the closing sale banner), whose button returns to `#drops`. `404.html` Shop Now → `products.html`. Nav "Shop" links (desktop, mobile menu, footer) also route to `products.html`. No external links remain.
+
+---
+
+## Products page (products.html, in order)
+
+1. Skip link, announcement bar, sticky header (same as landing; nav links return to `index.html#…`)
+2. Mobile overlay menu (01 The Drops · 02 Why AAC · 03 Manifesto · 04 Reviews + Shop Now)
+3. Page head — eyebrow, lowercase mega H1 "The drops.", sub with sale deadline, mono meta line (shipping/returns/sizing)
+4. Pink marquee band (same as landing)
+5. Product grid — 4 gallery cards (reuses the `.drop` card system): Unsplash product photo + mono badge, name, colorway/size spec line, 1-sentence description, 3 mono benefit bullets, was→now price (40% off computed), **Shop Now → `#final` closing banner**
+6. Footnote row — mono checkout note + Shop Now
+7. Final CTA — ink field, pink sun, "Cop a pair before Sunday night."
+8. Footer (Home / Why AAC / Manifesto / Reviews) + dock with live countdown
+
+Line-up: Courtline 1 $70→$42 (staff pick) · Blacktop Low $60→$36 (outdoor ready) · Skyline Mid $85→$51 (new drop) · Fastbreak Pro $110→$66 (flagship). All unisex, US 7–13.
 
 ---
 
@@ -94,7 +110,7 @@ Rules: 2 brand colors (ink + pink) plus neutrals. Pink is reserved for activatio
 2. Supporting headline (hero sub)
 3. Strong visual focal point (hero photo)
 4. Core benefits (4-card band)
-5. Prominent CTA → `https://gcu.edu`
+5. Prominent CTA → `products.html` (client update — external gcu.edu destination removed)
 6. Stated sale end date ("Sunday, October 4 · 11:59 PM" — computed live to next Sunday)
 7. Clean legible typography
 8. Accessible contrast (ink on paper ≈ 13.9:1; `--rose-text` is the AA-safe pink for small text)

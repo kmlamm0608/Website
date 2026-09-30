@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AAC Steezy — The Drops | Basketball Shoes, 40% Off | Active Apparel Co.</title>
+  <meta name="description" content="AAC Steezy basketball shoes — factory-priced, play-tested silhouettes for guards, bigs, and outdoor runs. 40% off sitewide through Sunday, October 4 at 11:59 PM.">
+  <meta name="theme-color" content="#262626">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AAC Steezy — The Drops | 40% Off Sitewide">
+  <meta property="og:description" content="Four basketball silhouettes, $36–$66 during the Midseason Sale. Free shipping over $50.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200&h=630&fit=crop&q=75">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Brand favicon: pink placard, charcoal AAC — mirrors the header mark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f5a0bd'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-size='22' font-weight='900' letter-spacing='-1' fill='%23262626' text-anchor='middle'%3EAAC%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================
+       1. TOKENS — same system as index.html
+       ========================================================== */
+    :root {
+      --ink:      #262626;
+      --ink-2:    #333333;
+      --ink-soft: #575757;   /* AA on paper (7.0:1) & on blush */
+      --pink:     #f5a0bd;
+      --pink-deep:#e087ab;
+      --rose-text:#a8446b;   /* AA (5.1:1) on paper — small rose text */
+      --blush:    #fbe4ec;
+      --paper:    #f4f2ee;
+      --white:    #ffffff;
+      --line:     rgba(38, 38, 38, 0.14);
+      --plaster:  #eceae5;
+
+      --font-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+      --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
+      --font-mono: 'Space Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
+
+      --wrap: 1320px;
+      --r: 10px;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--paper);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+    }
+
+    ::selection { background: var(--pink); color: var(--ink); }
+    :focus-visible { outline: 3px solid var(--rose-text); outline-offset: 3px; border-radius: 4px; }
+
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; }
+    ul { list-style: none; }
+    button { font: inherit; }
+
+    .wrap { max-width: var(--wrap); margin-inline: auto; padding-inline: clamp(20px, 4vw, 56px); }
+
+    .mega {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-stretch: 120%;
+      text-transform: uppercase;
+      line-height: 0.9;
+      letter-spacing: -0.01em;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+
+    .eyebrow::before { content: ""; width: 30px; height: 2px; background: var(--rose-text); }
+    .eyebrow .tag { color: var(--rose-text); }
+    .on-dark .eyebrow { color: var(--white); }
+    .on-dark .eyebrow::before { background: var(--pink); }
+    .on-dark .eyebrow .tag { color: var(--pink); }
+
+    /* ==========================================================
+       2. BUTTONS
+       ========================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      line-height: 1;
+      padding: 18px 32px;
+      border-radius: 999px;
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.25s var(--ease), background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn-pink { background: var(--pink); color: var(--ink); }
+    .btn-pink:hover { background: var(--pink-deep); color: var(--white); transform: translateY(-2px); box-shadow: 0 12px 28px rgba(224, 135, 171, 0.4); }
+
+    .btn-ghost { background: transparent; color: var(--white); border-color: rgba(255, 255, 255, 0.45); }
+    .btn-ghost:hover { border-color: var(--white); background: rgba(255, 255, 255, 0.08); transform: translateY(-2px); }
+
+    .btn:active { transform: translateY(0) scale(0.99); }
+
+    .btn-block { width: 100%; }
+
+    /* Keyboard users skip the header entirely */
+    .skip-link {
+      position: absolute;
+      top: -64px;
+      left: 16px;
+      z-index: 200;
+      background: var(--pink);
+      color: var(--ink);
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 14px 22px;
+      border-radius: 0 0 10px 10px;
+      text-decoration: none;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus { top: 0; }
+
+    /* ==========================================================
+       3. ANNOUNCE + HEADER
+       ========================================================== */
+    .announce { background: var(--ink); color: var(--white); font-size: 0.82rem; }
+    .announce .wrap { display: flex; justify-content: center; align-items: center; gap: 10px; padding-block: 10px; text-align: center; flex-wrap: wrap; }
+    .announce strong { color: var(--pink); font-weight: 700; }
+    .announce .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--pink); flex-shrink: 0; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(244, 242, 238, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav { display: flex; align-items: center; gap: 36px; height: 78px; }
+
+    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; margin-right: auto; }
+
+    .brand-mark {
+      display: inline-grid;
+      place-items: center;
+      background: var(--pink);
+      color: var(--ink);
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-stretch: 110%;
+      font-size: 0.95rem;
+      padding: 9px 12px;
+      border-radius: 8px;
+      transition: transform 0.3s var(--ease);
+    }
+
+    .brand:hover .brand-mark { transform: rotate(-6deg) scale(1.04); }
+
+    .brand-name { font-family: var(--font-display); font-weight: 900; font-stretch: 112%; font-size: 1.05rem; text-transform: uppercase; line-height: 1; }
+    .brand-name small { display: block; font-family: var(--font-body); font-weight: 600; font-size: 0.6rem; letter-spacing: 0.26em; color: var(--ink-soft); margin-top: 5px; }
+
+    .nav-links { display: flex; gap: 34px; }
+
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      padding-block: 6px;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 100%; height: 2px;
+      background: var(--rose-text);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s var(--ease);
+    }
+
+    .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
+
+    .nav-cta { display: inline-flex; }
+
+    .nav-toggle {
+      display: none;
+      margin-left: auto;
+      background: var(--ink);
+      color: var(--white);
+      border: none;
+      border-radius: 999px;
+      padding: 12px 20px;
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 120;
+      background: var(--ink);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      padding: 24px clamp(20px, 5vw, 44px) 44px;
+      transform: translateY(-102%);
+      visibility: hidden;
+      transition: transform 0.5s var(--ease), visibility 0.5s;
+    }
+
+    .mobile-menu.open { transform: translateY(0); visibility: visible; }
+
+    .mm-top { display: flex; align-items: center; justify-content: space-between; }
+
+    .mm-close {
+      background: var(--pink);
+      color: var(--ink);
+      border: none;
+      border-radius: 999px;
+      padding: 12px 20px;
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .mm-links { margin: auto 0; display: grid; gap: 4px; }
+
+    .mm-links a {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-stretch: 118%;
+      text-transform: uppercase;
+      font-size: clamp(2.6rem, 11vw, 4.4rem);
+      line-height: 1.04;
+      color: var(--white);
+      text-decoration: none;
+      display: flex;
+      align-items: baseline;
+      gap: 18px;
+      transition: color 0.2s ease, padding-left 0.25s var(--ease);
+    }
+
+    .mm-links a:hover { color: var(--pink); padding-left: 12px; }
+    .mm-links a span { font-family: var(--font-body); font-size: 0.85rem; font-weight: 600; color: var(--pink); letter-spacing: 0.1em; }
+
+    .mm-foot { display: grid; gap: 14px; border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 26px; }
+    .mm-foot .promo { color: #cfcfcf; font-size: 0.9rem; }
+    .mm-foot .promo strong { color: var(--pink); }
+
+    /* ==========================================================
+       4. PAGE HEAD — compact editorial opener
+       ========================================================== */
+    .page-head { background: var(--paper); }
+
+    .head-inner { padding-block: clamp(64px, 8vw, 110px) clamp(48px, 6vw, 80px); }
+
+    .page-title {
+      font-size: clamp(3rem, 9vw, 7rem);
+      text-transform: lowercase;
+      letter-spacing: -0.03em;
+      margin-top: 22px;
+    }
+
+    .page-title .accent { color: var(--rose-text); }
+
+    .page-sub {
+      max-width: 52ch;
+      margin-top: 24px;
+      font-size: 1.06rem;
+      color: var(--ink-soft);
+    }
+
+    .page-sub strong { color: var(--ink); }
+
+    .head-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-top: 30px;
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      text-transform: lowercase;
+      color: var(--ink-soft);
+    }
+
+    .head-meta span::before { content: "✦ "; color: var(--rose-text); }
+
+    /* ==========================================================
+       5. MARQUEE — single pink band, sale facts
+       ========================================================== */
+    .marquee { background: var(--pink); color: var(--ink); overflow: hidden; border-block: 3px solid var(--ink); }
+    .marquee-track { display: flex; width: max-content; animation: mleft 32s linear infinite; }
+    .marquee:hover .marquee-track { animation-play-state: paused; }
+
+    @keyframes mleft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    .marquee-track span {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-stretch: 114%;
+      text-transform: uppercase;
+      font-size: clamp(1rem, 2vw, 1.35rem);
+      letter-spacing: 0.04em;
+      padding: 14px 26px;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .marquee-track span::after { content: "✦"; font-size: 0.75em; opacity: 0.75; }
+
+    /* ==========================================================
+       6. THE DROPS — product grid. Gallery cards on plaster,
+       mono prices, one Shop Now per shoe -> #final.
+       ========================================================== */
+    .products-inner { padding-block: clamp(64px, 8vw, 110px); }
+
+    .drops-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: clamp(14px, 1.8vw, 22px);
+    }
+
+    .drop {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: var(--plaster);
+      border-radius: var(--r);
+      overflow: hidden;
+      transition: background-color 0.3s ease, transform 0.3s var(--ease);
+    }
+
+    .drop:hover { background: var(--white); transform: translateY(-3px); }
+
+    .drop-media {
+      position: relative;
+      aspect-ratio: 4 / 4.4;
+      overflow: hidden;
+      background: var(--floor, var(--blush));
+      transition: background-color 0.45s ease;
+    }
+
+    .drop-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s var(--ease);
+    }
+
+    .drop:hover .drop-media img { transform: scale(1.05); }
+    .drop:hover .drop-media { background: var(--floor-alt, var(--white)); }
+
+    .drop-badge {
+      position: absolute;
+      z-index: 2;
+      top: 12px;
+      left: 12px;
+      background: var(--ink);
+      color: var(--pink);
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: lowercase;
+      padding: 6px 11px;
+      border-radius: 999px;
+    }
+
+    .drop-badge.hot { background: var(--pink); color: var(--ink); }
+
+    .drop-body { display: flex; flex-direction: column; gap: 7px; padding: 18px 18px 20px; flex: 1; }
+
+    .drop-body h3 {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-stretch: 112%;
+      text-transform: uppercase;
+      font-size: 1.14rem;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .drop-body .spec {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.04em;
+      color: var(--ink-soft);
+      text-transform: lowercase;
+    }
+
+    .drop-body .desc { font-size: 0.9rem; color: var(--ink-soft); margin-top: 4px; }
+
+    /* Key performance benefits — spec-sheet voice. */
+    .drop-specs { display: grid; gap: 6px; margin-top: 10px; }
+
+    .drop-specs li {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+    }
+
+    .drop-specs li::before {
+      content: "+";
+      color: var(--rose-text);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .drop-foot {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .drop-price {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    .drop-price .was {
+      display: block;
+      font-weight: 400;
+      font-size: 0.74rem;
+      color: var(--ink-soft);
+      text-decoration: line-through;
+      margin-bottom: 3px;
+    }
+
+    .drop-cta {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--ink);
+      color: var(--white);
+      border-radius: 999px;
+      padding: 11px 18px;
+      transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s var(--ease);
+      white-space: nowrap;
+    }
+
+    .drop-cta:hover { background: var(--pink); color: var(--ink); transform: translateX(2px); }
+
+    .drops-foot {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .drops-foot .note {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--ink-soft);
+      text-transform: lowercase;
+    }
+
+    /* ==========================================================
+       7. FINAL CTA — ink field, pink sun, Shop Now -> #drops.
+       ========================================================== */
+    .final { background: var(--ink); color: var(--white); overflow: clip; }
+
+    .final-inner { padding-block: clamp(72px, 9vw, 130px); text-align: center; position: relative; }
+
+    .final-sun {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+      width: min(620px, 80vw);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 160, 189, 0.22), rgba(245, 160, 189, 0.06) 55%, transparent 72%);
+      filter: blur(4px);
+      pointer-events: none;
+    }
+
+    .final h2 { font-size: clamp(2.4rem, 6.4vw, 5.2rem); position: relative; }
+    .final h2 .pink { color: var(--pink); }
+
+    .final .ends {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 22px;
+      background: var(--pink);
+      color: var(--ink);
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      text-transform: lowercase;
+      padding: 12px 22px;
+      border-radius: 999px;
+    }
+
+    .final p.ends + p { position: relative; color: #d4d2cf; max-width: 52ch; margin: 26px auto 36px; }
+
+    .final-actions { position: relative; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+    .final-fine { position: relative; margin-top: 20px; font-size: 0.8rem; color: #a3a19d; }
+
+    /* ==========================================================
+       8. FOOTER
+       ========================================================== */
+    .site-footer { background: var(--ink); color: #a5a3a0; border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 44px 0 34px; }
+
+    .footer-top { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-bottom: 28px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+    .footer-mark {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-stretch: 122%;
+      text-transform: uppercase;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .footer-mark .pink { color: var(--pink); }
+
+    .footer-links { display: flex; gap: 26px; flex-wrap: wrap; }
+    .footer-links a { color: #a5a3a0; text-decoration: none; font-size: 0.88rem; font-weight: 500; }
+    .footer-links a:hover { color: var(--pink); }
+
+    .footer-bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 20px; font-size: 0.8rem; }
+
+    /* ==========================================================
+       9. DOCK — sticky CTA pill -> #drops
+       ========================================================== */
+    .dock {
+      position: fixed;
+      left: 50%;
+      bottom: 18px;
+      z-index: 110;
+      translate: -50% 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--ink);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      box-shadow: 0 18px 44px rgba(20, 20, 20, 0.35);
+      padding: 10px 12px 10px 22px;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 400;
+      transform: translateY(140%);
+      opacity: 0;
+      transition: transform 0.5s var(--ease), opacity 0.5s ease;
+    }
+
+    .dock.show { transform: translateY(0); opacity: 1; }
+
+    .dock .d-pct { color: var(--pink); font-weight: 700; letter-spacing: 0.06em; }
+    .dock .d-clock { color: #c9c7c4; font-variant-numeric: tabular-nums; font-size: 0.78rem; }
+    .dock .btn { padding: 12px 22px; font-size: 0.85rem; font-family: var(--font-body); font-weight: 600; }
+
+    /* ==========================================================
+       10. REVEALS + MOTION SAFETY
+       ========================================================== */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s var(--ease); transition-delay: calc(var(--i, 0) * 80ms); }
+    .reveal.in { opacity: 1; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .marquee-track { animation: none; }
+      .dock { display: none; }
+    }
+
+    /* ==========================================================
+       11. RESPONSIVE
+       ========================================================== */
+    @media (max-width: 1060px) {
+      .drops-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 880px) {
+      .nav-links, .nav-cta { display: none; }
+      .nav-toggle { display: inline-flex; }
+    }
+
+    @media (max-width: 640px) {
+      .drops-grid { grid-template-columns: 1fr; }
+      .drop-media { aspect-ratio: 16 / 10; }
+      .drop-foot { margin-top: 18px; }
+      .announce .hide-sm { display: none; }
+      .announce .dot { display: none; }
+      .dock { width: calc(100vw - 24px); justify-content: space-between; padding-left: 16px; }
+      .dock .d-clock { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#drops">Skip to products</a>
+
+  <!-- Announcement (status/functional label) -->
+  <div class="announce" role="region" aria-label="Promotion">
+    <div class="wrap">
+      <span><strong>Midseason Sale</strong> — 40% off sitewide</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span class="hide-sm">Ends Sunday, October 4 · 11:59 PM</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap">
+      <nav class="nav" aria-label="Main">
+        <a class="brand" href="index.html" aria-label="AAC Steezy — home">
+          <span class="brand-mark">AAC</span>
+          <span class="brand-name">Steezy<small>Active Apparel Co.</small></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html#benefits">Why AAC</a></li>
+          <li><a href="index.html#manifesto">Manifesto</a></li>
+          <li><a href="index.html#word">Reviews</a></li>
+        </ul>
+
+        <span class="nav-cta">
+          <a class="btn btn-pink" href="#drops" style="padding: 13px 26px;">Shop Now</a>
+        </span>
+
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Overlay menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="mm-top">
+      <span class="brand-mark" aria-hidden="true">AAC</span>
+      <button class="mm-close" id="mm-close">Close</button>
+    </div>
+    <nav class="mm-links" aria-label="Mobile">
+      <a href="index.html" aria-current="page"><span>01</span>The Drops</a>
+      <a href="index.html#benefits"><span>02</span>Why AAC</a>
+      <a href="index.html#manifesto"><span>03</span>Manifesto</a>
+      <a href="index.html#word"><span>04</span>Reviews</a>
+    </nav>
+    <div class="mm-foot">
+      <a class="btn btn-pink btn-block" href="#drops">Shop Now</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ PAGE HEAD ============ -->
+    <section class="page-head" id="page-head">
+      <div class="wrap head-inner">
+        <p class="eyebrow reveal">The drops <span class="tag">— midseason sale</span></p>
+
+        <h1 class="page-title mega reveal" id="drops" style="--i:1">The <span class="accent">drops.</span></h1>
+
+        <p class="page-sub reveal" style="--i:2">
+          Four basketball silhouettes, factory-priced and play-tested.
+          <strong>Every pair 40% off through Sunday, October 4</strong> — then they're gone for good.
+        </p>
+
+        <p class="head-meta reveal" style="--i:3">
+          <span>free shipping over $50</span>
+          <span>free returns for 60 days</span>
+          <span>unisex sizing · US 7–13</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>40% off sitewide</span><span>ends Sunday, October 4 · 11:59 PM</span>
+        <span>40% off sitewide</span><span>ends Sunday, October 4 · 11:59 PM</span>
+        <span>40% off sitewide</span><span>ends Sunday, October 4 · 11:59 PM</span>
+        <span>40% off sitewide</span><span>ends Sunday, October 4 · 11:59 PM</span>
+      </div>
+    </div>
+
+    <!-- ============ PRODUCT LIST ============ -->
+    <section class="products" aria-label="AAC basketball shoes">
+      <div class="wrap products-inner">
+
+        <div class="drops-grid">
+
+          <!-- 1 · Courtline 1 -->
+          <article class="drop reveal" style="--i:0">
+            <div class="drop-media" style="--floor: var(--blush);">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&q=75&auto=format&fit=crop" alt="AAC Courtline 1 basketball shoe in the Pink Salt colorway, studio shot on a pink background" loading="lazy" width="900" height="990" decoding="async">
+              <span class="drop-badge hot">staff pick</span>
+            </div>
+            <div class="drop-body">
+              <h3>Courtline 1</h3>
+              <p class="spec">pink salt / ink · unisex · US 7–13</p>
+              <p class="desc">Our everyday guard shoe. Clean enough for school, grippy enough for game day.</p>
+              <ul class="drop-specs" aria-label="Key benefits">
+                <li>Herringbone rubber grip</li>
+                <li>Breathable mesh upper</li>
+                <li>Cushioned foam midsole</li>
+              </ul>
+              <div class="drop-foot">
+                <p class="drop-price"><span class="was">$70</span>$42</p>
+                <a class="drop-cta" href="#final">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 · Blacktop Low -->
+          <article class="drop reveal" style="--i:1">
+            <div class="drop-media" style="--floor: var(--plaster);">
+              <img src="https://images.unsplash.com/photo-1597045566677-8cf032ed6634?w=900&q=75&auto=format&fit=crop" alt="AAC Blacktop Low basketball shoe on an outdoor court" loading="lazy" width="900" height="990" decoding="async">
+              <span class="drop-badge">outdoor ready</span>
+            </div>
+            <div class="drop-body">
+              <h3>Blacktop Low</h3>
+              <p class="spec">blacktop grey / white · unisex · US 7–13</p>
+              <p class="desc">Built for outdoor runs. An abrasion-ready outsole that shrugs off asphalt all summer.</p>
+              <ul class="drop-specs" aria-label="Key benefits">
+                <li>Abrasion-resistant outsole</li>
+                <li>Reinforced toe cap</li>
+                <li>Impact-ready foam</li>
+              </ul>
+              <div class="drop-foot">
+                <p class="drop-price"><span class="was">$60</span>$36</p>
+                <a class="drop-cta" href="#final">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 · Skyline Mid -->
+          <article class="drop reveal" style="--i:2">
+            <div class="drop-media" style="--floor: var(--plaster);">
+              <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=900&q=75&auto=format&fit=crop" alt="AAC Skyline Mid basketball shoe in the Ink colorway, dark studio shot" loading="lazy" width="900" height="990" decoding="async">
+              <span class="drop-badge">new drop</span>
+            </div>
+            <div class="drop-body">
+              <h3>Skyline Mid</h3>
+              <p class="spec">ink / pink salt · unisex · US 7–13</p>
+              <p class="desc">A mid collar that locks you in for crossovers, boards, and second efforts.</p>
+              <ul class="drop-specs" aria-label="Key benefits">
+                <li>Ankle-support mid cut</li>
+                <li>Locked-in heel counter</li>
+                <li>Responsive return foam</li>
+              </ul>
+              <div class="drop-foot">
+                <p class="drop-price"><span class="was">$85</span>$51</p>
+                <a class="drop-cta" href="#final">Shop Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 · Fastbreak Pro -->
+          <article class="drop reveal" style="--i:3">
+            <div class="drop-media" style="--floor: var(--plaster);">
+              <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=900&q=75&auto=format&fit=crop" alt="AAC Fastbreak Pro basketball shoe in the Whiteout colorway, studio shot" loading="lazy" width="900" height="990" decoding="async">
+              <span class="drop-badge hot">flagship</span>
+            </div>
+            <div class="drop-body">
+              <h3>Fastbreak Pro</h3>
+              <p class="spec">whiteout / pink salt · unisex · US 7–13</p>
+              <p class="desc">The flagship. Full-length rebound foam for players who never stop running the floor.</p>
+              <ul class="drop-specs" aria-label="Key benefits">
+                <li>Full-length rebound foam</li>
+                <li>Lightweight knit upper</li>
+                <li>Pivot-zone traction pod</li>
+              </ul>
+              <div class="drop-foot">
+                <p class="drop-price"><span class="was">$110</span>$66</p>
+                <a class="drop-cta" href="#final">Shop Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="drops-foot reveal">
+          <p class="note">40% applied at checkout · sale prices shown · while sizes last</p>
+          <a class="btn btn-pink" href="#final">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="final" id="final" aria-labelledby="final-title">
+      <div class="wrap final-inner">
+        <span class="final-sun" aria-hidden="true"></span>
+
+        <h2 class="mega reveal" id="final-title">Cop a pair before<br><span class="pink">Sunday night.</span></h2>
+
+        <p class="ends reveal" style="--i:1; margin-top: 22px;">
+          <span>Sale ends Sunday, October 4 · 11:59 PM</span>
+        </p>
+
+        <div class="final-actions reveal" style="--i:2; margin-top: 36px;">
+          <a class="btn btn-pink" href="#drops">Shop Now</a>
+        </div>
+
+        <p class="final-fine reveal" style="--i:3">No account needed · free returns for 60 days</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <p class="footer-mark">AAC <span class="pink">Steezy</span></p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#benefits">Why AAC</a></li>
+          <li><a href="index.html#manifesto">Manifesto</a></li>
+          <li><a href="index.html#word">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="copy-year">2026</span> Active Apparel Co. — AAC Steezy</p>
+        <p>40% off sitewide through Sunday, October 4 · 11:59 PM local time.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dock (persistent CTA -> #drops) -->
+  <div class="dock" id="dock" role="region" aria-label="Sale shortcut">
+    <span class="d-pct">40% OFF</span>
+    <span class="d-clock">ENDS SUN 11:59 PM · <span data-cd-inline>--:--:--</span></span>
+    <a class="btn btn-pink" href="#drops">Shop Now</a>
+  </div>
+
+  <script>
+    /* ==========================================================
+       1. COUNTDOWN — Sunday 11:59 PM local (live urgency).
+       ========================================================== */
+    function nextSaleEnd() {
+      const now = new Date();
+      const end = new Date(now);
+      end.setDate(now.getDate() + ((7 - now.getDay()) % 7));
+      end.setHours(23, 59, 59, 999);
+      if (end <= now) end.setDate(end.getDate() + 7);
+      return end;
+    }
+
+    const SALE_END = nextSaleEnd();
+    const inlineClock = document.querySelector("[data-cd-inline]");
+
+    function tick() {
+      const ms = SALE_END - new Date();
+      if (ms <= 0) {
+        if (inlineClock) inlineClock.textContent = "ENDED";
+        return;
+      }
+      const s = Math.floor(ms / 1000);
+      const d = Math.floor(s / 86400);
+      const h = String(Math.floor((s % 86400) / 3600)).padStart(2, "0");
+      const m = String(Math.floor((s % 3600) / 60)).padStart(2, "0");
+      const sec = String(s % 60).padStart(2, "0");
+      if (inlineClock) inlineClock.textContent = d + "D " + h + ":" + m + ":" + sec;
+    }
+
+    tick();
+    setInterval(tick, 1000);
+
+    /* ==========================================================
+       2. REVEALS
+       ========================================================== */
+    const revealer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in");
+            revealer.unobserve(entry.target);
+          }
+        }
+      },
+      { threshold: 0.12 }
+    );
+
+    document.querySelectorAll(".reveal").forEach((el) => revealer.observe(el));
+
+    /* ==========================================================
+       3. DOCK — shows after the page head scrolls away,
+          hides near the footer (it would be redundant there).
+       ========================================================== */
+    const dock = document.getElementById("dock");
+    const pageHead = document.getElementById("page-head");
+    const siteFooter = document.querySelector(".site-footer");
+
+    let headGone = false;
+    let footerSeen = false;
+
+    function syncDock() {
+      dock.classList.toggle("show", headGone && !footerSeen);
+    }
+
+    const headWatch = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          headGone = !entry.isIntersecting;
+          syncDock();
+        }
+      },
+      { rootMargin: "-80px 0px 0px 0px" }
+    );
+
+    headWatch.observe(pageHead);
+
+    const footWatch = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          footerSeen = entry.isIntersecting;
+          syncDock();
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    footWatch.observe(siteFooter);
+
+    /* ==========================================================
+       4. MOBILE OVERLAY MENU
+       ========================================================== */
+    const toggle = document.getElementById("nav-toggle");
+    const menu = document.getElementById("mobile-menu");
+    const closeBtn = document.getElementById("mm-close");
+
+    function setMenu(open) {
+      menu.classList.toggle("open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+      document.body.style.overflow = open ? "hidden" : "";
+      if (open) closeBtn.focus();
+    }
+
+    toggle.addEventListener("click", () => setMenu(true));
+    closeBtn.addEventListener("click", () => setMenu(false));
+
+    menu.addEventListener("click", (e) => {
+      if (e.target.closest("a")) setMenu(false);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && menu.classList.contains("open")) setMenu(false);
+    });
+
+    /* ==========================================================
+       5. COPYRIGHT YEAR — never goes stale.
+       ========================================================== */
+    const yearEl = document.getElementById("copy-year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
